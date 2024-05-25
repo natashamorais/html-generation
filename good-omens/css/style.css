@@ -1,0 +1,131 @@
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bgcolor1);
+    align-items: center;
+    padding: 10px;
+    color: #fff;
+}
+
+
+
+.main{
+    display:flex;
+    background-color: var(--bgcolor2);
+}
+.main_img{
+
+    width: 40%;
+ 
+}
+.main_title{
+    align-self: center;
+    font-size: 2.5rem;
+}
+
+.serie{
+    display: flex;
+    background-color: var(--bgcolor1);
+}
+
+.serie_text{
+
+padding: 20vh;
+font-size: 1.5rem;
+font-weight: lighter;
+color: white;
+}
+
+.serie_img {
+   width: 50%;
+}
+.aboutMe_container{
+    background-color: var(--bgcolor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMe_text {
+    display: flex;
+justify-content: center;
+flex-direction: column;
+padding: 20vh;
+font-size: 1.5rem;
+font-weight: lighter;
+line-height: 3rem;
+}
+
+
+
+.aboutMe_img img{
+    border-radius: 100%;
+}
+
+
+
+
+.contactMe_container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--bgcolor1);
+}
+
+.contactMe_container h2{
+    margin-top: 4rem;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 480px;
+
+    padding: 24px;
+    border: none;
+}
+
+form label {
+    font-size: 20px;
+    text-align: left;
+}
+
+form input,
+textarea {
+    margin: 8px 0 16px;
+    padding: 8px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;  
+}
+button{
+    text-align: center;
+    padding: 12px 32px;
+color:#000;
+    border-radius: 10px;
+    font-weight: 700;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--bgcolor1);
+    padding: 20px;
+
+}
+
+a .form-btn:hover{
+    background-color: rgb(241, 230, 230);
+    color: brown;
+    }
+    
+
+    
+    :root {
+        --bgcolor1:#483285;
+        --bgcolor2: #B2B3CB;
+
+    }
