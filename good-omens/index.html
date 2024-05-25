@@ -84,10 +84,10 @@ alt="Capacete de Astronauta Animado">
         </div>
 
          <!-- Adicione os dados do seu Github-->
-         <div class="aboutMe_container "> <!-- Adicione aqui as CLASSES -->
+         <div id="aboutMe"class="aboutMe_container "> <!-- Adicione aqui as CLASSES -->
             
 
-            <article class="aboutMe_text"> 
+            <!-- <article class="aboutMe_text"> 
                 <h1>Quem sou eu?</h1>
                 <p>
                     Sou a Natasha, uma pessoa não binária desenvolvedora de software. Tutore de duas gatas(Malevola e Leia) e uma cachorra(Michonne), jogadore de tarô, aprendiz de costureira e bruxa.
@@ -103,16 +103,16 @@ alt="Capacete de Astronauta Animado">
                             <a href="https://www.instagram.com/praticamente.inofensiva">
                                 <img src="./assets/img/instagram.svg" alt="Instagram link" />
                 </div>
-             
+              -->
 </article>
-                <div class ="aboutMe_img"> 
+                <!-- <div class ="aboutMe_img"> 
 
                     <img src="https://avatars.githubusercontent.com/u/42356373?v=4"
                     alt="Foto do Perfil do Github - Conteúdo Generation">
                     
                  
                 </div>
-              
+               -->
 
            
 
@@ -126,31 +126,24 @@ alt="Capacete de Astronauta Animado">
             <h2>Entre em contato comigo</h2>
 
             <!-- Seção do Formulário-->
-            <form action="" method="POST">
-                <div class="contactMe_form">
-                    <input type="hidden" name="_next" value="">
-                    <input type="hidden" name="_captcha" value="false" >
-                </div>
-                <div>
-                    <label for="nome"><strong>Nome: </strong></label>
-                    <input id="nome" type="text" name="name" placeholder="Digite seu nome" required>
-                </div>
-                <div>
-                    <label for="email"><strong>Email: </strong></label>
-                    <input id="email" type="email" name="email" placeholder="Digite seu email" required>
-                </div>
-                <div>
-                    <label for="subject"><strong>Assunto: </strong></label>
-                    <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
-                </div>
-                <div>
-                    <label for="message"><strong>Mensagem: </strong></label>
-                    <textarea id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
-                </div>
-                <div>
-                    <button type="submit" class="form-btn">Enviar</button>
-                </div>
-           </form>
+            <form>
+                <label for="nome">Nome: </label>
+                <input onkeyup="validarNome()" id="nome" type="text" name="name" placeholder="Digite seu nome" required>
+                <div id="txtNome"></div>
+
+                <label for="email">Email: </label>
+                <input onkeyup="validarEmail()" id="email" type="email" name="email" placeholder="Digite seu email" required>
+                <div id="txtEmail"></div>
+
+                <label for="subject">Assunto: </label>
+                <input id="subject" type="text" name="subject" placeholder="Digite o título da mensagem" required>
+
+                <label for="message">Mensagem: </label>
+                <textarea onkeyup="validarMessage()" id="message" name="message" placeholder="Digite sua mensagem" required></textarea>
+                <div id="txtMensagem"></div>
+
+                <button onclick="enviarForm()" class="btn" type="submit">Enviar</button> <!-- Adicione aqui as CLASSES -->
+            </form>
         </section>
     </main>
 
@@ -158,6 +151,8 @@ alt="Capacete de Astronauta Animado">
     <footer>
         Feito com ❤ por Natasha  - 2024
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

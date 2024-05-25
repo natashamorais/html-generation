@@ -44,6 +44,7 @@ color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3rem;
 }
 
 .aboutMe_text {
@@ -58,10 +59,29 @@ line-height: 3rem;
 
 
 
-.aboutMe_img img{
+.aboutMe_container img{ 
     border-radius: 100%;
 }
+.aboutMe_github{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-text:center;
+}
+.btn{
+text-align: center;
+padding: 12px 32px; 
+background:  #6b36c8;  
+border: 1px solid #9a7bd1;    
+color: #fff;
+border-radius: 10px;    
+font-weight: 700;      
+}
 
+.btn:hover {
+    background-color: rgb(241, 230, 230);
+    color: brown;
+}
 
 
 
@@ -97,6 +117,7 @@ textarea {
     border-radius: 20px;
     width: 100%;
     font-size: 16px;
+    color: #000;
 }
 
 textarea {
@@ -118,8 +139,7 @@ footer{
 }
 
 a .form-btn:hover{
-    background-color: rgb(241, 230, 230);
-    color: brown;
+ 
     }
     
 
